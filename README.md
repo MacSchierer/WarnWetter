@@ -1,6 +1,6 @@
 # WarnWetter -  Ein Scriptable Widget für iOS und Mac
 Das Widget zeigt regionale Warnmeldungen des Deutschen Wetterdienstes (DWD) an. <br/>
-Verwendbar als kleines, mittleres oder großes (empfohlen!) Widget.
+Verwendbar als kleines, mittleres oder großes (empfohlen!) Widget.<br/><br/>
 <a href="https://scriptdu.de/?name=WarnWetter&source=https%3A%2F%2Fgithub.com%2FMacSchierer%2FWarnWetter%2Fblob%2Fmain%2FWarnWetter.js&docs=https%3A%2F%2Fgithub.com%2FMacSchierer%2FWarnWetter%2Fblob%2Fmain%2FREADME.md"><img alt="Download with ScriptDude" src="https://scriptdu.de/download.svg"></a>
 
 ## Features
