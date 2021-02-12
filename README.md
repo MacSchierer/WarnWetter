@@ -12,8 +12,8 @@ Verwendbar als kleines, mittleres oder großes (empfohlen!) Widget.
 * Für mehr Details reicht ein Tap bzw. Klick auf das Widget und die Internetseite des DWD wird geöffnet.
 
 ## Beispiele
-<img src="img/large1.png" width="350" /> &nbsp; <img src="img/large#2.png" width="350" /><br/><br/>
-<img src="img/medium#1.png" width="350" /> &nbsp; <img src="img/medium#2.png" width="350" /> 
+<img src="img/large1.png" width="350" /> &nbsp; <img src="img/large2.png" width="350" /><br/><br/>
+<img src="img/medium1.png" width="350" /> &nbsp; <img src="img/medium2.png" width="350" /> 
 
 ## Installation und Verwendung
 * Download Scriptable App für iOS oder Mac - https://scriptable.app
