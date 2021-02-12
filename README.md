@@ -7,8 +7,8 @@ Verwendbar als kleines, mittleres oder großes (empfohlen!) Widget.
 * Download/Import der ImpfQuoten.js Datei nach iCloud/Scriptable
 * Auf dem Homescreen bzw. in der Mitteilungszentrale ein neues Scriptable Widget (groß) erstellen.
 * Die Auswahl der Region (Bezug auf Landkreis) kann über die Vorgabe der Warncell-ID als Widgetparameter erfolgen.<br/>Eine Tabelle mit den notwendigen IDs wird angezeigt, wenn das Skript in der Scriptable App ausgeführt wird.
-* Wird keine Warncell-ID dem Widget vorgegeben, wird via GPS die Region ermittelt und es wird versucht die zugehörige ID zu ermitteln.
-<img src="img/warncellids.png" width="400" /> &nbsp; <img src="img/config.png" width="400" /><br/><br/>
+* Wird keine Warncell-ID dem Widget vorgegeben, wird via GPS die Region ermittelt und es wird versucht die zugehörige ID zu ermitteln.<br/><br/>
+<img src="img/warncellids.png" width="400" /> &nbsp; <img src="img/config.png" width="400" />
 
 ## ScriptDude
 Alternativ kann das Script via <a href="https://scriptdu.de" target="_blank">ScriptDude</a> installiert werden. 
