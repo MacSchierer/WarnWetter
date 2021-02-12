@@ -7,7 +7,7 @@ Verwendbar als kleines, mittleres oder großes (empfohlen!) Widget.
 * Je nach Geräteeinstellung erfolgt ein automatischer Wechsel des Ernscheinungsbildes.
 * Anzeige einer beliebigen Region über die Vorgabe der Warncell-ID.
 * Region wird via GPS erkannt.
-* Anzeige von bis zu 3 Warnmeldungen (im großen Widget)
+* Anzeige von bis zu 3 Warnmeldungen (im großen Widget).
 * Wenn keine oder wenige Warnmeldungen aktiv sind, wird die allgemeine Wetterlage Deutschlands angezeigt.
 * Für mehr Details reicht ein Tap bzw. Klick auf das Widget und die Internetseite des DWD wird geöffnet.
 
@@ -37,6 +37,6 @@ Verwendbar als kleines, mittleres oder großes (empfohlen!) Widget.
 
 ## Dankeschön an...
 * ...Dennis für den Projektvorschlag
-* ...Florian und Dennis für die ersten Tests und die kontruktiven Verbesserungsvorschläge
-* ...die Scritabple Community und 
+* ...Florian und Dennis für die ersten Tests und die konstruktiven Verbesserungsvorschläge
+* ...die Scritabple Community 
 * ...den DWD zum Bereitstellen der Daten
