@@ -1,7 +1,6 @@
 # WarnWetter -  Ein Scriptable Widget für iOS und Mac
 Das Widget zeigt regionale Warnmeldungen des Deutschen Wetterdienstes (DWD) an. <br/>
-Verwendbar als kleines, mittleres oder großes (empfohlen!) Widget.<br/><br/>
-<a href="https://scriptdu.de/?name=WarnWetter&source=https%3A%2F%2Fgithub.com%2FMacSchierer%2FWarnWetter%2Fblob%2Fmain%2FWarnWetter.js&docs=https%3A%2F%2Fgithub.com%2FMacSchierer%2FWarnWetter%2Fblob%2Fmain%2FREADME.md"><img alt="Download with ScriptDude" src="https://scriptdu.de/download.svg"></a>
+Verwendbar als kleines, mittleres oder großes (empfohlen!) Widget.
 
 ## Features
 * Untestützung bei der Auswahl einer Warncell-ID direkt in der Scriptable App.
@@ -19,7 +18,6 @@ Verwendbar als kleines, mittleres oder großes (empfohlen!) Widget.<br/><br/>
 ## Installation und Verwendung
 * Download Scriptable App für iOS oder Mac - https://scriptable.app
 * Download/Import der ImpfQuoten.js Datei nach iCloud/Scriptable
-* Alternativ kann das Script via <a href="https://scriptdu.de/?name=WarnWetter&source=https%3A%2F%2Fgithub.com%2FMacSchierer%2FWarnWetter%2Fblob%2Fmain%2FWarnWetter.js&docs=https%3A%2F%2Fgithub.com%2FMacSchierer%2FWarnWetter%2Fblob%2Fmain%2FREADME.md" target="_blank">ScriptDude</a> installiert werden. 
 * Auf dem Homescreen bzw. in der Mitteilungszentrale ein neues Scriptable Widget (groß) erstellen.
 * Die Auswahl der Region (Bezug auf Landkreis) kann über die Vorgabe der Warncell-ID als Widgetparameter erfolgen. Eine Tabelle mit den notwendigen IDs wird angezeigt, wenn das Skript in der Scriptable App ausgeführt wird.
 * Wird keine Warncell-ID dem Widget vorgegeben, wird via GPS die Region ermittelt und es wird versucht die zugehörige ID zu ermitteln.<br/><br/>
@@ -32,9 +30,6 @@ Verwendbar als kleines, mittleres oder großes (empfohlen!) Widget.<br/><br/>
 * Basis ist die bereitgestellte JSONP-File vom DWD<br/>https://www.dwd.de/DE/wetter/warnungen_aktuell/objekt_einbindung/objekteinbindung.html
 * Warncell-IDs <br/>https://www.dwd.de/DE/leistungen/opendata/help/warnungen/cap_warncellids_csv.html
 * Allgemeine Wetterlage <br/>https://www.dwd.de/DWD/wetter/wv_allg/deutschland/text/vhdl13_dwog.html
-
-## Tools
-* https://scriptdu.de
 
 ## Changelog
 * v1.5 Release GitHub
