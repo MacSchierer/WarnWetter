@@ -38,5 +38,5 @@ Verwendbar als kleines, mittleres oder großes (empfohlen!) Widget.
 ## Dankeschön an...
 * ...Dennis für den Projektvorschlag
 * ...Florian und Dennis für die ersten Tests und die konstruktiven Verbesserungsvorschläge
-* ...die Scritabple Community 
+* ...die Scriptable Community 
 * ...den DWD zum Bereitstellen der Daten
