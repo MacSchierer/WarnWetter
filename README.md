@@ -23,8 +23,8 @@ Alternativ kann das Script via <a href="https://scriptdu.de" target="_blank">Scr
 * Für mehr Details reicht ein Tap bzw. Klick auf das Widget und die Internetseite des DWD wird geöffnet.
 
 ## Beispiele
-<img src="img/large#1.PNG" width="400" /> &nbsp; <img src="img/large#2.PNG" width="400" /><br/><br/>
-<img src="img/medium#1.png" width="250" /> &nbsp; <img src="img/medium#2.png" width="250" /> 
+<img src="img/large#1.png" width="400" /> &nbsp; <img src="img/large#2.png" width="400" /><br/><br/>
+<img src="img/medium#1.png" width="400" /> &nbsp; <img src="img/medium#2.png" width="400" /> 
 
 ## Bekannte Probleme
 * Verzögerung und Fehlermeldung bei der GPS-Lokalisierung<br/>Das Problem tritt sporatisch auf und nach kurzer Zeit aktuallisiert sich die Widgetanzeige korrekt.
