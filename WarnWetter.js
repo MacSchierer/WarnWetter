@@ -7,7 +7,7 @@
 // Das Widget zeigt regionale Warnmeldungen des Deutschen Wetterdienstes (DWD) an. 
 // Verwendbar als kleines, mittleres oder großes (empfohlen!) Widget.
 //
-// Script by MacSchierer, 12.02.2021, v1.5
+// Script by MacSchierer, 14.02.2021, v1.6
 // Download der aktuellen Version hier: GitHub https://github.com/MacSchierer/WarnWetter
 // 
 // Verwendet die bereitgestellte JSONP-File vom DWD
@@ -88,7 +88,7 @@ if (WarnCell == null || WarnCell.toString().length == 0) {
 		console.warn(e) 
 		useGPS = false  
 		hasError = true
-		ErrorTxt += "Das Widget konnte deinen Standort nicht verwenden. " 
+		ErrorTxt += "GPS Problem...\n" 
 	}
 } else {
 	MyArea = WarnCellData[WarnCell].NAME
@@ -109,7 +109,7 @@ if (useGPS) {
 if (WarnCellData.hasOwnProperty(WarnCell) == false) {
 	log(WarnCell + " wurde nicht gefunden!")
 	hasError = true
-	ErrorTxt += "Region (Warncell-ID:" + WarnCell + ") wurde nicht erkannt. Öffne die Scriptable-App und starte dort das Skipt. Dort erhälts du eine Überischt der Regionen und deren IDs. "  
+	ErrorTxt += "Die Region wurde aktuell nicht erkannt.\nSollte das Problem weiterhin bestehen, starte das Skript einmal kurz in der App. Dort erhältst du auch eine Übersicht der Regionen und weitere Infos. "  
 } else {
 	// Wenn Warncell-ID vorhanden ist, kann die "Auswertung" starten	
 	try {
@@ -318,7 +318,7 @@ class WarnWidget {
 					InfoText.minimumScaleFactor = ScaleFactor
 					InfoText.lineLimit = 8
 				WarnStackInfo.addSpacer()
-			//WarnStack.addSpacer()				
+			WarnStack.addSpacer()				
 		}
 		list.addSpacer()	
 		return list
@@ -331,20 +331,16 @@ class WarnWidget {
 function ErrorWidget(reason) {
 	const error = new ListWidget()
 	error.setPadding(10,10,10,10)
-	let myGradient = new LinearGradient()
-		myGradient.colors = [new Color("#990000"), new Color("#ff0000")]
-		myGradient.locations = [0.0,1]
-	error.backgroundGradient = myGradient
-	let title = error.addText("Fehler")
-	title.centerAlignText()
-	title.textColor = Color.white()
-	title.font = Font.semiboldSystemFont(24)
-	title.minimumScaleFactor = 0.5
+	error.backgroundGradient = BGGradient
+	let title = error.addText("Information")
+		title.centerAlignText()
+		title.textColor = SubTextColor
+		title.font = Font.semiboldSystemFont(24)
 		let reasonText = error.addText(reason)
 			reasonText.centerAlignText()
-			reasonText.textColor = Color.white()
+			reasonText.textColor = MainTextColor
 			reasonText.font = Font.semiboldSystemFont(12)
-			reasonText.minimumScaleFactor = 0.5
+			reasonText.minimumScaleFactor = 0.7
 	error.addSpacer()
   return error	
 }
