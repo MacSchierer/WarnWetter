@@ -32,7 +32,8 @@ Verwendbar als kleines, mittleres oder großes (empfohlen!) Widget.
 * Allgemeine Wetterlage <br/>https://www.dwd.de/DWD/wetter/wv_allg/deutschland/text/vhdl13_dwog.html
 
 ## Changelog
-* v1.6 Kleine Korrekturen und Hinweis wenn Standort ermittlung nicht funktioniert.
+* v1.7 Fehler behoben, wenn keine Warnmeldung für eine Region vorlag.
+* v1.6 Kleine Korrekturen und Hinweis wenn Standortermittlung nicht funktioniert.
 * v1.5 Release GitHub
 
 ## Dankeschön an...
