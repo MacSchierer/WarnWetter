@@ -7,7 +7,7 @@
 // Das Widget zeigt regionale Warnmeldungen des Deutschen Wetterdienstes (DWD) an. 
 // Verwendbar als kleines, mittleres oder großes (empfohlen!) Widget.
 //
-// Script by MacSchierer, 14.02.2021, v1.6
+// Script by MacSchierer, 16.02.2021, v1.7
 // Download der aktuellen Version hier: GitHub https://github.com/MacSchierer/WarnWetter
 // 
 // Verwendet die bereitgestellte JSONP-File vom DWD
@@ -90,9 +90,7 @@ if (WarnCell == null || WarnCell.toString().length == 0) {
 		hasError = true
 		ErrorTxt += "GPS Problem...\n" 
 	}
-} else {
-	MyArea = WarnCellData[WarnCell].NAME
-}
+} 
 // JSON vom DWD abrufen
 try {
 	AllItems = await loadItems(APIurl)
@@ -109,22 +107,24 @@ if (useGPS) {
 if (WarnCellData.hasOwnProperty(WarnCell) == false) {
 	log(WarnCell + " wurde nicht gefunden!")
 	hasError = true
-	ErrorTxt += "Die Region wurde aktuell nicht erkannt.\nSollte das Problem weiterhin bestehen, starte das Skript einmal kurz in der App. Dort erhältst du auch eine Übersicht der Regionen und weitere Infos. "  
+	ErrorTxt += "Die Region wurde aktuell nicht erkannt.\nSollte das Problem weiterhin bestehen, starte das Skript einmal kurz in der App. Dort erhältst du auch eine Übersicht der Regionen und weitere Infos. " 
 } else {
+	if (!useGPS){MyArea = WarnCellData[WarnCell].NAME} 
 	// Wenn Warncell-ID vorhanden ist, kann die "Auswertung" starten	
 	try {
 		CellWarnings = AllItems.warnings[WarnCell.toString()]
-		WarnAnz = CellWarnings.length
-		log(WarnAnz + " Meldung(en) gefunden")
-		WarnLocation = new Array()
-		WarnLevel = new Array()
-		WarnEvent = new Array()
-		WarnShort = new Array()
-		WarnStartDate = new Array()
-		WarnEndeDate = new Array()
-		WarnDescription = new Array()
-		WarnInstruction = new Array()
-		if (CellWarnings.length > 0) {
+		log(CellWarnings)
+		if (typeof CellWarnings !== "undefined") {
+			WarnAnz = CellWarnings.length
+			log(WarnAnz + " Meldung(en) gefunden")
+			WarnLocation = new Array()
+			WarnLevel = new Array()
+			WarnEvent = new Array()
+			WarnShort = new Array()
+			WarnStartDate = new Array()
+			WarnEndeDate = new Array()
+			WarnDescription = new Array()
+			WarnInstruction = new Array()
 			var i;
 			for (i = 0; i < CellWarnings.length; i++) { 
 				WarnLocation.push(CellWarnings[i].regionName)
@@ -139,10 +139,9 @@ if (WarnCellData.hasOwnProperty(WarnCell) == false) {
 			WarnIntro = WarnLocation[0]
 			WarnOutput = true	
 		} else {
-			if (useGPS) {
-				WarnIntro = MyArea + ": Keine Warnung aktiv."
-			}
+			WarnIntro = MyArea + ": Keine Warnung aktiv."
 			WarnIcon = "checkmark.seal"
+			WarnAnz = 0
 			WarnOutput = false
 		}
 	} catch (e) {
@@ -202,7 +201,7 @@ class WarnWidget {
 		}			
 		const SubTitle = list.addStack()  
 		SubTitle.setPadding(0, 4, 0, 4)
-		if (useGPS) {
+		if (useGPS == true) {
 			addSymbol({
 				  symbol: 'mappin.and.ellipse',
 				  stack: SubTitle,
