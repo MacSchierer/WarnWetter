@@ -7,7 +7,7 @@
 // Das Widget zeigt regionale Warnmeldungen des Deutschen Wetterdienstes (DWD) an. 
 // Verwendbar als kleines, mittleres oder großes (empfohlen!) Widget.
 //
-// Script by MacSchierer, 16.02.2021, v1.7
+// Script by MacSchierer, 17.06.2021, v1.8
 // Download der aktuellen Version hier: GitHub https://github.com/MacSchierer/WarnWetter
 // 
 // Verwendet die bereitgestellte JSONP-File vom DWD
