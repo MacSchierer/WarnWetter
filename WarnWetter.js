@@ -553,6 +553,8 @@ function getWarnLevelColor(Level){
 	else if (Level == 3) {LevelColor = new Color("#d04b40")}
 	else if (Level == 4) {LevelColor = new Color("#7a254f")}
 	else if (Level == 0) {LevelColor = new Color("#cbe277")}
+	// Hitze Level
+  	else if (Level == 50) {LevelColor = new Color("#cc99ff")}
 	return LevelColor
 }
 //
